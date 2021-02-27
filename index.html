@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		LowCostStore
+	</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: Roboto;
+		}
+
+		.Logo {
+			position: absolute;
+			left: 100px;
+			top: 10px;
+			font-size: 15px;
+			color: #FFB320;
+			text-shadow: 1px 1px 1px;
+		}
+
+		.imglogo {
+			position: absolute;
+			left: 68px;
+			top: 15px;
+
+		}
+
+		.H2 {
+			color: white;
+		}
+
+		.MenuBoard {
+			width: 98.5%;
+			height: 30px;
+			padding: 10px;
+			background-color: black;
+			color:white;
+			position: absolute; 
+			box-shadow: 2px 2px 2px 2px black;
+		}
+
+
+		.Links{
+			margin-top: 10px;
+		}
+		.Links a{
+			text-decoration: none;
+			margin-left: 30px;
+			text-align: center;
+			font-size: 15px;
+			font-weight: bold;
+			color: white;
+		}
+
+		.Links a:hover {
+
+			color: #FFB320;
+			font-size: 12px;
+			text-shadow: 1px white;
+		}
+
+		.Links a::link {
+
+			color: #FFB320;
+			font-size: 10px;
+			text-shadow: 1px white;
+		}
+
+		.container{
+			position:relative;
+			top: 53px;
+		  background-color: white;
+		  width: 100%;
+		  padding: 0px;
+		}
+
+		ul, li {
+		    padding: 0;
+		    margin: 0;
+		    list-style: none;
+		}
+
+		ul.slider{
+		  position: relative;
+		  width: 100%;
+		  height: 400px;
+		}
+
+		ul.slider li {
+		    position: absolute;
+		    left: 0px;
+		    top: 0px;
+		    opacity: 0;
+		    width: inherit;
+		    height: inherit;
+		    transition: opacity .5s;
+		    background:#fff;
+		}
+
+		ul.slider li img{
+		  width: 100%;
+		  height: 400px;
+		  object-fit: cover;
+		}
+
+		ul.slider li:first-child {
+		    opacity: 1; /*Mostramos el primer <li>*/
+		}
+
+		ul.slider li:target {
+		    opacity: 1;
+		     /*Mostramos el <li> del enlace que pulsemos*/
+		}
+
+		.menu{
+			position: absolute;
+			top: 370px;
+			left:46%;
+		  text-align: center;
+		  margin: 0px;
+		}
+
+		.menu li{
+		  display: inline-block;
+		  text-align: center;
+		}
+
+		.menu li a{
+		  display: inline-block;
+		  color: white;
+		  text-decoration: none;
+		  background-color: white;
+		  padding: 5px;
+		  width: 5px;
+		  height: 5px;
+		  font-size: 20px;
+		  border-radius: 100%;
+		  border: 1px solid #000;
+		  box-shadow: 2px 2px 2px #828282;
+		}
+
+		.transition {
+			width: 100%;
+			height: 80px;
+			background-color: black;
+			position: relative;
+			top: 53px;
+		}
+
+		.transition2 {
+			width: 100%;
+			height: 60px;
+			background-color: white;
+			position: relative;
+			top: 30px;
+			border-radius: 40%;
+			border-top: 3px solid #626262;
+		}
+
+		.Tags {
+			background-color: white;
+			border-radius: 15px;
+			border: 0.2px solid #868686;
+			box-shadow: 4px 4px 4px #828282;
+			float: left;
+			height: 200px;
+			margin-left: 50px;
+			padding: 20px;
+			position: relative;
+			text-align: center;
+			width: 20%;
+		}
+		
+
+		.Tagsota {
+
+			display: inline-block;
+			align-content: center;
+			position: relative;
+			top:-60px;
+			left:3%;
+		}
+
+		.Descripcion {
+			margin-left: 90px;
+			width: 80%;
+			padding: 25px;
+
+		}
+
+		.Descripcion h1 {
+
+			font-size: 35px;
+		}
+
+		.Descripcion p{
+
+			font-size: 20px;
+			color: #323232;
+			text-align: justify;
+		}
+
+
+		.imagensotas {
+
+			margin:20px;
+			padding: 20px;
+		}
+
+		.imagensotas img {
+
+			margin-right: 100px;
+			border-image: 1px solid black;
+			border-radius: 15px;
+
+		}
+
+		.Line {
+			width:100%;
+			background-color: #828282;
+			height: 2px;
+			margin-top: 5px;
+		}
+		.Cita {
+
+			background-color: black;
+			color: white;
+			font-size: 10px;
+			width: 100%;
+			height: 50px;
+			padding-top: 30px;
+		}
+
+		.TransCita {
+
+			width: 100%;
+			height: 60px;
+			background-color: white;
+			position: relative;
+			top: 30px;
+			border-radius: 40%;
+			border-bottom: 5px solid #FFB320;
+		}
+		.idia {
+			bottom:0px;
+			background-color: #FFB320;
+			width: 100%;
+			height:70px; 
+		}
+	</style>
+
+	<script type="text/javascript">
+		
+	</script>
+</head>
+
+<header>
+
+
+	<div class="MenuBoard">
+		<div class="Links">
+			<center>
+			<a href="TareaSesion7.html">INICIO</a>
+			<a href="Objetivos.html">OBJETIVOS</a>
+			<a href="###">ALCANCE</a>
+			<a href="###">BOCETOS</a>
+			<a href="###">NOSOTROS</a>
+			</center>
+		</div>
+	</div>
+
+	
+
+	<div class="container">
+	  
+	  <ul class="slider">
+	    <li id="slide1">
+	      <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mco-home-desktop-slider-picture-54ce5288-5b60-4cd4-9650-333de5a2aa9c.jpg"/>
+	    </li>
+	    <li id="slide2">
+	      <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mco-home-desktop-slider-picture-b62400f8-4ab0-4059-9180-efa491eff4e4.jpg"/>
+	    </li>
+	    <li id="slide3">
+	      <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mco-home-desktop-slider-picture-1f5e5cfd-382a-44f8-967d-f8cc757a4de3.jpg"/>
+	    </li>
+	  </ul>
+	  
+	  <ul class="menu">
+	    <li>
+	      <a href="#slide1"></a>
+	    </li>
+	    <li>
+	      <a href="#slide2"></a>
+	    </li>
+	     <li>
+	      <a href="#slide3"></a>
+	    </li>
+	  </ul>
+	  
+	</div>
+
+	<div class="Logo">
+				<h1>LowCost<font class="H2">Store</font></h1>
+			</div>
+		<img class="imglogo" src="https://judithdemolina.com/admin/img/carrito1.png" width="30" height="30" >
+	
+	
+
+</header>
+<body>
+	<div class="transition">
+		<p></p>
+	</div>
+	<div class="transition2">
+		
+	</div>
+
+	<center>
+
+	<div class="Tagsota">
+
+		<div class="Tags">
+			<img src="1.png" width="100" height="100"><br><br><br>
+			<p>Seguridad garantizada en tu compra</p>
+		</div>
+
+		<div class="Tags">
+			
+			<img src="2.png" width="100" height="100"><br><br><br>
+			<p>Vendedores certificados y productos de maxima calidad</p>
+		</div>
+		
+		<div class="Tags">
+			
+			<img src="3.png" width="100" height="100"><br><br><br>
+			<p>Distribuidores por todo el pais</p>
+		</div>
+		
+	</div>
+	</center>
+
+	<div class="Descripcion">
+		
+		<h1>DESCRIPCIÓN</h1>
+
+		<div class="Line"></div><br><br><br>
+
+		<p>Proporcionar una página de ventas en línea, con un gran compromiso con el cliente, El usuario podrá loguearse en la página la cual contendrá un carrito de compra online, en donde los clientes puedan almacenar los artículos que desea comprar. La página cuenta con botones interactivos que dirigen a otras subsecciones de la página en donde encontrarás información acerca de este proyecto. </p>
+
+		<div class="imagensotas">
+			<center>
+			
+			<img src="https://serie4blog.files.wordpress.com/2016/09/diseno-y-desarrollo-de-tienda-online.png" width="300" height="250">
+
+			<img src="http://www.innovasoluciones.net/wp-content/uploads/2018/11/presupuesto-tienda-online-woocommerce.png" width="350" height="250">
+			
+		</center>
+		</div>
+	</div>
+</body>
+
+
+<footer>
+		<div class="TransCita"></div>
+
+	
+		<div class="Cita">
+			<br><br>
+			<p><center>Todos los derechos reservados © Pagina implementada by Ivan D Duque - Andres R Legarda - Juan P Mora.</center></p>
+		</div>
+</footer>
+</html>
